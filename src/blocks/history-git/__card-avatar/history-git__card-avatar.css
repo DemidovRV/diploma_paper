@@ -1,0 +1,12 @@
+.history-git__card-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+@media screen and (min-width: 1024px) {
+    .history-git__card-avatar {
+         width: 64px;
+        height: 64px;
+    }
+}

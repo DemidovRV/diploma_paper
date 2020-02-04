@@ -1,0 +1,23 @@
+.history-git__card-button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    border: 1px solid #1A1B22;
+    box-sizing: border-box;
+    border-radius: 80px;
+    background-color: #F5F6F7;
+    margin: 0px auto 30px;
+    width: 288px;
+}
+
+.history-git__card-button:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+
+@media screen and (min-width: 768px) {
+    .history-git__card-button {
+        display: none;
+    }
+}

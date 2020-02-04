@@ -1,0 +1,9 @@
+.technologies__title {
+    margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .technologies__title {
+        width: 350px;
+    }
+}

@@ -1,0 +1,23 @@
+.author__about {
+    margin-top: 23px;
+    margin-bottom: 53px;
+}
+
+@media screen and (min-width: 768px) {
+    .author__about {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .author__about {
+        width: 600px;
+        margin-left: 56px;
+        margin-top: 131px;
+        margin-bottom: 25px;
+    }
+}

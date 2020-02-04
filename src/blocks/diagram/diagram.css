@@ -1,0 +1,21 @@
+.diagram {
+ 	background: #F5F6F7;
+ 	padding-top: 24px;
+ 	padding-bottom: 24px;
+ 	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+	.diagram {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;     	
+    }
+}
+
+ @media screen and (min-width: 1024px) {
+	.diagram {
+        padding-top: 80px;
+        padding-bottom: 80px;     	
+    }
+}

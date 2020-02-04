@@ -1,0 +1,39 @@
+.result-search__analitics {
+    text-decoration: none;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    padding-top: 16px;
+    position: relative;
+    margin-left: -4px;
+    display: inline-block;
+    padding-bottom: 39px;
+}
+
+@media screen and (min-width: 600px) {
+    .result-search__analitics {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .result-search__analitics {
+        padding-top: 94px;
+        padding-bottom: 72px;
+    }
+}
+
+.result-search__analitics:after {
+    content: " ";
+    width: 8px;
+    height: 13px;
+    background-image: url(../images/arrow_right.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 7px;
+}

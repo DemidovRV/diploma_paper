@@ -1,0 +1,15 @@
+@media screen and (min-width: 1024px) {
+    .history-git__button-arrow {
+    	position: absolute;
+        top: 0;
+        content: " ";
+        max-width: 88px;
+        width: 100%;
+        min-height: 288px;
+        background: linear-gradient(180deg,rgba(246,246,247,0),#f5f6f7);
+    }
+
+    .history-git__button-arrow:nth-of-type(2) {
+        right: 0;
+    }
+}

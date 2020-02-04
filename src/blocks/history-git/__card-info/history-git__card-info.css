@@ -1,0 +1,10 @@
+.history-git__card-info {
+    margin-top: 9px;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .history-git__card-info {
+        margin-top: 16px;
+    }
+}

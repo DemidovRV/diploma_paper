@@ -1,0 +1,17 @@
+.for-clients {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 700px) {
+    .for-clients {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .for-clients {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+}

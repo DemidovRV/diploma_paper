@@ -1,0 +1,11 @@
+.diagram__name-column {	
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;    
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #B6BCBF;
+}

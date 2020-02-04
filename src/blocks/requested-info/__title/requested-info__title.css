@@ -1,0 +1,25 @@
+.requested-info__title {
+    font-family: 'Roboto Slab', Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    color: #1A1B22;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+	.requested-info__title {
+        margin-top: 64px;
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+	.requested-info__title {
+        margin-top: 80px;
+        font-size: 40px;
+        line-height: 46px;
+    }   
+}

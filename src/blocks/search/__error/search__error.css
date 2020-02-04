@@ -1,0 +1,17 @@
+.search__error {
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    color: red;
+}
+
+@media screen and (min-width: 500px) {
+    .search__error {
+        position: absolute;
+        bottom: -35px;
+        left: 35px;
+        padding: 0;
+    }
+}

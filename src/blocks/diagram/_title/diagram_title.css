@@ -1,0 +1,17 @@
+.diagram_title {
+	font-family: 'Roboto Slab', Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    color: #1A1B22;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+	.diagram_title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,22 @@
+.author__photo {
+    margin: 20px auto 0;
+    width: 272px;
+    height: 272px;
+    display: block;
+}
+@media screen and (min-width: 1200px) {
+    .author__photo {
+        width: 464px;
+        height: 464px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .author__photo {
+        width: 232px;
+        height: 232px;
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+}

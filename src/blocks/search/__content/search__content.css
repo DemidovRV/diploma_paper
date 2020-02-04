@@ -1,0 +1,9 @@
+.search__content {
+    max-width: 452px;
+}
+
+@media screen and (min-width: 1024px) {
+    .search__content {
+        max-width: 610px;
+    }
+}

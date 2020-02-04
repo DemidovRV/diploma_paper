@@ -1,0 +1,18 @@
+.technologies {
+    padding-top: 32px;
+    padding-bottom: 38px;
+    background-color: #F5F6F7;
+}
+
+@media screen and (min-width: 700px) {
+    .technologies {
+        padding-top: 65px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .technologies {
+     
+        padding-bottom: 90px;
+    }
+}

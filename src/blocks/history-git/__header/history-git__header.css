@@ -1,0 +1,7 @@
+@media screen and (min-width: 768px) {
+    .history-git__header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}

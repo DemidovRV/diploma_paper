@@ -1,0 +1,45 @@
+.glide__arrow {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease, border 300ms ease-in-out;
+    transform: translateY(-50%);
+    line-height: 1;
+    border-radius: 40px;
+    background-color: #1a1b22;
+}
+
+@media screen and (max-width: 850px) {
+    .glide__arrow {
+        display: none;
+    }
+}
+
+.glide__arrow:focus {
+    outline: none;
+}
+
+.glide__arrow--left {
+    background-image: url(../images/slider-control-left.png);
+    background-position-y: -8px;
+    background-position-x: -12px;
+    padding: 0;
+    left: 2em;
+}
+
+.glide__arrow--right {
+    background-image: url(../images/slider-control-right.png);
+    background-position-y: -8px;
+    background-position-x: -10px;
+    padding: 0;
+    right: 2em;
+}
+
+.glide__arrow--disabled {
+    opacity: 0.33;
+}

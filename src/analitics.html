@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    title>Анализ по вашему запросу</title>
+    <meta name="description" content="Анализ новостей вашего запроса показал следующую статистику за неделю">
+    <meta name="keywords" content="NewsAnalyzer, анализ новостей">
+    <
+    <meta name="author" content="Демидов Роман">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analitics.css %>">
+    <!-- <link rel="stylesheet" href="fonts/font.css"> -->
+    <link rel="icon" href="<%=require('./images/icon.png')%>">
+</head>
+
+<body class="page">
+   
+
+ <header class="header-black">
+        <section class="section header__content">
+            <a href="index.html" class="header__logo header__logo_black link-cursor">NewsAnalyzer</a>
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="index.html" class="header__menu-link link-cursor ">Главная</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="about.html" class="header__menu-link header__menu-link_activ-black link-cursor">О проекте</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main class="">
+            <div class="breadcrumbs section"> 
+                <p>
+                    <a href="index.html" class="breadcrumbs__link breadcrumbs__text link-cursor" >Главная</a> / <span class="breadcrumbs__text breadcrumbs__text_color">Аналитика</span>
+                </p>
+                </div>
+        <section class="requested-info section">
+                <h1 class="requested-info__title">Вы спросили: «<span class="requested-info__title-span">Путешествия</span>»</h1>
+                <p class="requested-info__week">Новостей за неделю: <span class="requested-info__numder-analitic">34324</span></p> 
+                <p class="requested-info__week">Упоминаний в заголовках: <span class="requested-info__numder-analitic">233</span></p>
+            </div>
+        </section>
+        <section class="diagram">
+            <div class="section">
+            <h2 class="diagram_title">Аналитика по дням</h2>
+            <div class="diagram__container">
+
+                <div class="diagram__content">
+                        <p class="diagram__name-column diagram__column-date-width">Дата <span class="diagram__name-column-span">(Август)</span></p>
+                        <p class="diagram__name-column diagram__column-values-width">Кол-во упоминаний</p>
+                    </div>
+                    <ul class="diagram__axis">
+                        <li class="diagram__axis-values">0</li>
+                        <li class="diagram__axis-values">25</li>
+                        <li class="diagram__axis-values">50</li>
+                        <li class="diagram__axis-values">75</li>
+                        <li class="diagram__axis-values">100</li>
+                    </ul>
+
+<div class="diagram__content">
+                        <ul class="diagram__column">
+                            <!-- diagram__date_1 и т.д. для работы js -->
+                            <li class="diagram__date diagram__date_1">19, пн</li>
+                            <li class="diagram__date diagram__date_2 ">20, вт</li>
+                            <li class="diagram__date diagram__date_3 ">21, ср</li>
+                            <li class="diagram__date diagram__date_4 ">22, чт</li>
+                            <li class="diagram__date diagram__date_5 ">23, пт</li>
+                            <li class="diagram__date diagram__date_6 ">24, сб</li>
+                            <li class="diagram__date diagram__date_7 ">25, вс</li>
+                        </ul>
+                        <ul class="diagram__column">
+                            <li class="diagram__column-line-item diagram__column-line-item_1">
+                                <!-- значение 25 для проверки шкалы -->
+                                <p class='diagram__column-line-text'>25</p> 
+                            </li>
+                            <li class="diagram__column-line-item diagram__column-line-item_2">
+                                <p class='diagram__column-line-text'>18</p>
+                            </li>
+                            <li class="diagram__column-line-item diagram__column-line-item_3">
+                                <p class='diagram__column-line-text'>11</p>
+                            </li>
+                            <li class="diagram__column-line-item diagram__column-line-item_4">
+                                <p class='diagram__column-line-text'>39</p>
+                            </li>
+                            <li class="diagram__column-line-item diagram__column-line-item_5">
+                                <p class='diagram__column-line-text'>45</p>
+                            </li>
+                            <li class="diagram__column-line-item diagram__column-line-item_6">
+                                <p class='diagram__column-line-text'>73</p>
+                            </li>
+                            <li class="diagram__column-line-item diagram__column-line-item_7">
+                                <p class='diagram__column-line-text'>34</p>
+                            </li>
+
+                            
+                            </li>
+                        </ul>
+                    </div>
+                <ul class="diagram__axis diagram__axis_bottom">
+                        <li class="diagram__axis-values">0</li>
+                        <li class="diagram__axis-values">25</li>
+                        <li class="diagram__axis-values">50</li>
+                        <li class="diagram__axis-values">75</li>
+                        <li class="diagram__axis-values">100</li>
+                    </ul>
+            </div>
+            </div>
+        </section>
+        
+
+    </main>
+    <footer class="footer footer_about section">
+        <p class="footer__copyright">© Демидов Роман</p>
+        <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="index.html" class="footer__link link-cursor">Главная</a></li>
+            <li class="footer__menu-item"><a href="about.html" class="footer__link link-cursor">О проекте</a></li>
+            <li class="footer__menu-item"><a href="https://praktikum.yandex.ru/" target="_blank" class="footer__link link-cursor">Яндекс.Практикум</a></li>
+        </ul>
+        <div class="footer__icons">
+            <a href="https://github.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/github.png')%>" alt="icon github"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/facebook.png')%>" alt="icon facebook" class="footer__icon"></a>
+        </div>
+    </footer>
+    <script src = "<%= htmlWebpackPlugin.files.chunks.analitics.entry %>"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.history-git__title {
+    margin-top: 45px;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .history-git__title {
+        margin-top: 35px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .history-git__title {
+    	margin-top: 70px;
+        width: 600px;
+        margin-bottom: 65px;
+    }
+}

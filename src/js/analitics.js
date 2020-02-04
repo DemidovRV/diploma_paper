@@ -1,0 +1,2 @@
+import './styles/analitics.css'
+

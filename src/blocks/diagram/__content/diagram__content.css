@@ -1,0 +1,13 @@
+.diagram__content {
+	display: grid;
+	grid-template-columns: 22.22% 72.22%;
+	grid-column-gap: 16px;
+	margin-top: 4px;
+}
+
+@media screen and (min-width: 600px) {
+	.diagram__content {
+    	display: grid;
+    	grid-template-columns: 100px 1fr;
+    }   
+}

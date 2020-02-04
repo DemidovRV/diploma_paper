@@ -1,0 +1,24 @@
+.search__input {
+    min-width: 288px;
+    background: #FFFFFF;
+    border: 1px solid #D1D2D6;
+    box-sizing: border-box;
+    backdrop-filter: blur(1px);
+    font-size: 16px;
+    line-height: 22px;
+    color: #B6BCBF;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+    .search__input {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.search__input:active, 
+.search__input:focus {
+    outline: none;
+}

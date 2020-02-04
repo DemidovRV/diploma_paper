@@ -1,0 +1,11 @@
+.news-not-found__subtitle {
+    width: 320px;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin: 16px auto 0;
+    display: block;
+}

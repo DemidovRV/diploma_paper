@@ -1,0 +1,15 @@
+.history-git__card-title {
+    font-family: 'Roboto Slab', Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;    
+    color: #1A1B22;
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .history-git__card-title {
+        font-size: 26px;
+    }
+}
