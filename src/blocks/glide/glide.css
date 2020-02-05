@@ -1,3 +1,11 @@
+@import url(./__track/glide__track.css);
+@import url(./__slides/glide__slides.css);
+@import url(./__slide/glide__slide.css);
+@import url(./__bullets/glide__bullets.css);
+@import url(./__bullet/glide__bullet.css);
+@import url(./__arrows/glide__arrows.css);
+@import url(./__arrow/glide__arrow.css);
+
 .glide {
     margin-bottom: 56px;
     position: relative;
@@ -10,6 +18,7 @@
         margin: 0 0 24px;
     }
 }
+
 @media screen and (min-width: 768px) {
     .glide {
         margin-bottom: 0px;

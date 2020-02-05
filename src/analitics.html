@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    title>Анализ по вашему запросу</title>
+    <title>Анализ по вашему запросу</title>
     <meta name="description" content="Анализ новостей вашего запроса показал следующую статистику за неделю">
-    <meta name="keywords" content="NewsAnalyzer, анализ новостей">
-    <
+    <meta name="keywords" content="NewsAnalyzer, анализ новостей">   
     <meta name="author" content="Демидов Роман">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analitics.css %>">
     <!-- <link rel="stylesheet" href="fonts/font.css"> -->
-    <link rel="icon" href="<%=require('./images/icon.png')%>">
+    <link rel="icon" href="<%=require('./images/icon.png').default%>">
 </head>
-
-<body class="page">
-   
+<body class="page">   
 
  <header class="header-black">
         <section class="section header__content">
@@ -30,7 +27,7 @@
             </ul>
         </section>
     </header>
-    <main class="">
+    <main>
             <div class="breadcrumbs section"> 
                 <p>
                     <a href="index.html" class="breadcrumbs__link breadcrumbs__text link-cursor" >Главная</a> / <span class="breadcrumbs__text breadcrumbs__text_color">Аналитика</span>
@@ -40,11 +37,10 @@
                 <h1 class="requested-info__title">Вы спросили: «<span class="requested-info__title-span">Путешествия</span>»</h1>
                 <p class="requested-info__week">Новостей за неделю: <span class="requested-info__numder-analitic">34324</span></p> 
                 <p class="requested-info__week">Упоминаний в заголовках: <span class="requested-info__numder-analitic">233</span></p>
-            </div>
         </section>
         <section class="diagram">
             <div class="section">
-            <h2 class="diagram_title">Аналитика по дням</h2>
+            <h2 class="diagram__title">Аналитика по дням</h2>
             <div class="diagram__container">
 
                 <div class="diagram__content">
@@ -59,7 +55,7 @@
                         <li class="diagram__axis-values">100</li>
                     </ul>
 
-<div class="diagram__content">
+                    <div class="diagram__content">
                         <ul class="diagram__column">
                             <!-- diagram__date_1 и т.д. для работы js -->
                             <li class="diagram__date diagram__date_1">19, пн</li>
@@ -93,9 +89,6 @@
                             <li class="diagram__column-line-item diagram__column-line-item_7">
                                 <p class='diagram__column-line-text'>34</p>
                             </li>
-
-                            
-                            </li>
                         </ul>
                     </div>
                 <ul class="diagram__axis diagram__axis_bottom">
@@ -119,8 +112,8 @@
             <li class="footer__menu-item"><a href="https://praktikum.yandex.ru/" target="_blank" class="footer__link link-cursor">Яндекс.Практикум</a></li>
         </ul>
         <div class="footer__icons">
-            <a href="https://github.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/github.png')%>" alt="icon github"></a>
-            <a href="https://www.facebook.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/facebook.png')%>" alt="icon facebook" class="footer__icon"></a>
+            <a href="https://github.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/github.png').default%>" alt="icon github"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/facebook.png').default%>" alt="icon facebook" class="footer__icon"></a>
         </div>
     </footer>
     <script src = "<%= htmlWebpackPlugin.files.chunks.analitics.entry %>"></script>

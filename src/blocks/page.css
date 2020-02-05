@@ -1,9 +1,7 @@
+@import url(../fonts/font.css);
+
 .page {
     min-width: 320px;
     max-width: 1440px;
     margin: 0 auto;
-}
-
-
-
- 
+} 

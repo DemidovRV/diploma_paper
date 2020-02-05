@@ -15,7 +15,6 @@
     background: rgba(255, 255, 255, 0.6);
 }
 
-
 @media screen and (min-width: 768px) {
     .history-git__card-button {
         display: none;

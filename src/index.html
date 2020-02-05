@@ -7,15 +7,15 @@
     <title>NewsAnalyzer</title>
     <meta name="description" content="NewsAnalyzer - cервис определения популярности статей.">
     <meta name="keywords" content="NewsAnalyzer, анализ новостей">
-    
+
     <meta name="author" content="Демидов Роман">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-    <!-- <link rel="stylesheet" href="fonts/font.css"> -->
-    <link rel="icon" href="<%=require('./images/icon.png')%>">
+
+    <link rel="icon" href="<%=require('./images/icon.png').default%>">
 </head>
 
 <body class="page">
-    
+
 
     <div class="search">
 
@@ -37,7 +37,7 @@
             <h1 class="search__title">Что в мире творится?</h1>
             <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
             <form class="search__form">
-                <input type="text" name="typeNews" class="input search__input" value="Политика">
+                <input type="text" name="typeNews" class="input search__input" placeholder="Введите тему новости" required minlength="3" maxlength="25">
                 <button class="input search__button">Искать</button>
                 <span class="search__error">Ошибка</span>
             </form>
@@ -66,9 +66,9 @@
 
             <div class="result-search__cards">
                 <div class="result-search__card">
-                    <img src="<%=require('./images/image_08.jpg')%>" class="result-search__img" alt="">
+                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
                     <div class="result-search__content">
-                        <data class="result-search__data">2 августа, 2019</data>
+                        <p class="result-search__data">2 августа, 2019</p>
                         <h2 class="result-search__title-card">
                             <a href="" target="_blank" class="result-search__title-link">Национальное достояние – парки</a>
                         </h2>
@@ -80,9 +80,9 @@
                 </div>
 
                 <div class="result-search__card">
-                    <img src="<%=require('./images/image_08.jpg')%>" class="result-search__img" alt="">
+                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
                     <div class="result-search__content">
-                        <data class="result-search__data">2 августа, 2019</data>
+                        <p class="result-search__data">2 августа, 2019</p>
                         <h2 class="result-search__title-card">
                             <a href="" target="_blank" class="result-search__title-link">Национальное достояние – парки</a>
                         </h2>
@@ -93,9 +93,9 @@
                 </div>
 
                 <div class="result-search__card">
-                    <img src="<%=require('./images/image_08.jpg')%>" class="result-search__img" alt="">
+                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
                     <div class="result-search__content">
-                        <data class="result-search__data">2 августа, 2019</data>
+                        <p class="result-search__data">2 августа, 2019</p>
                         <h2 class="result-search__title-card">
                             <a href="" target="_blank" class="result-search__title-link link-cursor">Национальное достояние – парки</a>
                         </h2>
@@ -105,9 +105,9 @@
                 </div>
 
                 <div class="result-search__card ">
-                    <img src="<%=require('./images/image_08.jpg')%>" class="result-search__img" alt="">
+                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
                     <div class="result-search__content">
-                        <data class="result-search__data">2 августа, 2019</data>
+                        <p class="result-search__data">2 августа, 2019</p>
                         <h2 class="result-search__title-card">
                             <a href="" target="_blank" class="result-search__title-link link-cursor
                             ">Национальное достояние – парки</a>
@@ -118,9 +118,9 @@
                 </div>
 
                 <div class="result-search__card ">
-                    <img src="<%=require('./images/image_08.jpg')%>" class="result-search__img" alt="">
+                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
                     <div class="result-search__content">
-                        <data class="result-search__data">2 августа, 2019</data>
+                        <p class="result-search__data">2 августа, 2019</p>
                         <h2 class="result-search__title-card">
                             <a href="" target="_blank" class="result-search__title-link link-cursor">Национальное достояние – парки</a>
                         </h2>
@@ -130,9 +130,9 @@
                     </div>
                 </div>
                 <div class="result-search__card ">
-                    <img src="<%=require('./images/image_08.jpg')%>" class="result-search__img" alt="">
+                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка еще одной новости">
                     <div class="result-search__content">
-                        <data class="result-search__data">2 августа, 2019</data>
+                        <p class="result-search__data">2 августа, 2019</p>
                         <h2 class="result-search__title-card">
                             <a href="" target="_blank" class="result-search__title-link link-cursor">Национальное достояние – парки</a>
                         </h2>
@@ -143,10 +143,11 @@
                 </div>
 
             </div>
-            <button class="result-search__button input">Показать еще</button>
+        </div>
+        <button class="result-search__button input">Показать еще</button>
     </section>
     <section class="author section">
-        <img src="<%=require('./images/image-03.png')%>" class="author__photo" alt="">
+        <img src="<%=require('./images/image-03.png').default%>" class="author__photo" alt="Фото автора сервиса">
         <div class="author__about">
             <h2 class="author__title title">Об авторе</h2>
             <div class="author__text">
@@ -165,11 +166,11 @@
             <li class="footer__menu-item"><a href="https://praktikum.yandex.ru/" target="_blank" class="footer__link link-cursor">Яндекс.Практикум</a></li>
         </ul>
         <div class="footer__icons">
-            <a href="https://github.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/github.png')%>" alt="icon github"></a>
-            <a href="https://www.facebook.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/facebook.png')%>" alt="icon facebook" class="footer__icon"></a>
+            <a href="https://github.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/github.png').default%>" alt="icon github"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/facebook.png').default%>" alt="icon facebook" class="footer__icon"></a>
         </div>
     </footer>
-    <script src = "<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 
 </html>

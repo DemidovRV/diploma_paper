@@ -1,3 +1,20 @@
+@import url(./__title/history-git__title.css);
+@import url(./__links-all-commits/history-git__links-all-commits.css);
+@import url(./__header/history-git__header.css);
+@import url(./__date/history-git__date.css);
+@import url(./__container/history-git__container.css);
+@import url(./__comments/history-git__comments.css);
+@import url(./__card-title/history-git__card-title.css);
+@import url(./__card-mail/history-git__card-mail.css);
+@import url(./__card-info-name/history-git__card-info-name.css);
+@import url(./__card-info/history-git__card-info.css);
+@import url(./__card-content/history-git__card-content.css);
+@import url(./__card-container/history-git__card-container.css);
+@import url(./__card-button/history-git__card-button.css);
+@import url(./__card-avatar/history-git__card-avatar.css);
+@import url(./__card/history-git__card.css);
+@import url(./__button-arrow/history-git__button-arrow.css);
+
 .history-git {
     width: 100%;
     display: flex;

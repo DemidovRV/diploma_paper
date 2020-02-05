@@ -1,2 +1,1 @@
-import './styles/analitics.css'
-
+import '../styles/analitics.css';

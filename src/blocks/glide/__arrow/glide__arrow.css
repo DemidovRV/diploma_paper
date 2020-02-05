@@ -25,7 +25,7 @@
 }
 
 .glide__arrow--left {
-    background-image: url(../images/slider-control-left.png);
+    background-image: url(../../../images/slider-control-left.png);
     background-position-y: -8px;
     background-position-x: -12px;
     padding: 0;
@@ -33,7 +33,7 @@
 }
 
 .glide__arrow--right {
-    background-image: url(../images/slider-control-right.png);
+    background-image: url(../../../images/slider-control-right.png);
     background-position-y: -8px;
     background-position-x: -10px;
     padding: 0;

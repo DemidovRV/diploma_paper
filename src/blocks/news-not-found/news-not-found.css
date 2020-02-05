@@ -1,3 +1,7 @@
+@import url(./__title/news-not-found__title.css);
+@import url(./__subtitle/news-not-found__subtitle.css);
+@import url(./__img/news-not-found__img.css);
+
 .news-not-found {
     min-height: 374px;
 }

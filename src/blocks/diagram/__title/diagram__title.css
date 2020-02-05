@@ -1,4 +1,4 @@
-.diagram_title {
+.diagram__title {
 	font-family: 'Roboto Slab', Georgia, serif;
     font-style: normal;
     font-weight: normal;
@@ -10,7 +10,7 @@
 }
 
 @media screen and (min-width: 600px) {
-	.diagram_title {
+	.diagram__title {
         font-size: 26px;
         line-height: 30px;
     }

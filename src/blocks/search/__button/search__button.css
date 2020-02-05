@@ -10,6 +10,7 @@
     margin: 16px auto 0;
     border: none;
 }
+
 .search__button:active {
 	background: #2A65CC;
 }

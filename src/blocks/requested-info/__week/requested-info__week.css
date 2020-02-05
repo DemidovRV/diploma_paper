@@ -8,6 +8,7 @@
     margin-top: 15px;
     margin-bottom: 0;
 }
+
 @media screen and (min-width: 600px) {
 	.requested-info__week {
         margin-top: 24px;

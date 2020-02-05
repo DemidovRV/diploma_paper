@@ -10,6 +10,7 @@
     border: 1px solid #FFFFFF;
     margin: 0 auto 0;
 }
+
 .result-search__button:hover {
 	background: rgba(255, 255, 255, 0.6);
 }

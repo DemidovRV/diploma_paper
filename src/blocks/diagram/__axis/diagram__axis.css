@@ -1,3 +1,5 @@
+@import url(./_bottom/diagram__axis_bottom.css);
+
 .diagram__axis {
 	margin-top: 8px;
 	margin-bottom: 0;

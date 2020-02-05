@@ -8,92 +8,82 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: {
-      main: './src/pages/scripts/index.js',
-        analytics: './src/pages/scripts/analytics.js',
-        about: './src/pages/scripts/about.js'
+        main: './src/js/index.js',
+        analitics: './src/js/analitics.js',
+        about: './src/js/about.js'
     },
     output: { // Точка выхода
         path: path.resolve(__dirname, 'dist'),
-        filename: './[name]/[name].[chunkhash].js'
+        filename: './js/[name].[chunkhash].js'
     },
     module: {
-      rules: [{
-          test: /\.js$/,
+        rules: [{
+                test: /\.js$/,
 
-          use: {
-              loader: 'babel-loader'  // Весь JS обрабатывается пакетом babel-loader
-              },
-              exclude: /node_modules/ // Исключаем папку node_modules
-          },
-          {
-            test: /\.css$/,
-            use: [
-              (isDev ? 'style-loader' : {
-              loader: MiniCssExtractPlugin.loader,
-              options: {
-                  publicPath: './'
-              }
-            }),
-            'css-loader',
-            'postcss-loader']
-          },
-          {
-            test: /\.(png|jpe?g|gif)$/i,
-            use: [
-                {
-                    loader: 'file-loader',
+                use: {
+                    loader: 'babel-loader' // Весь JS обрабатывается пакетом babel-loader
                 },
-            ],
-        },
-        {
-            test: /\.(png|jpg|gif|ico|svg)$/,
-            use: [
-                'file-loader?name=./images/[name].[ext]',
-                {
-                    loader: 'image-webpack-loader',
-                    options: {}
-                },
-            ]
-        },
-        {
-            test: /\.(eot|ttf|woff|woff2)$/,
-            loader: 'file-loader?name=./vendor/[name].[ext]'
-        }
-          ]
-      },
-      devServer: {
+                exclude: /node_modules/ // Исключаем папку node_modules
+            },
+            {
+                test: /\.css$/,
+                use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader']
+            },
+
+            {
+                test: /\.(png|jpg|gif|ico|svg)$/,
+                use: [
+                    'file-loader?name=./images/[name].[ext]',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            disable: true
+                        }
+                    },
+                ]
+            },
+            {
+                test: /\.(eot|ttf|woff|woff2)$/,
+                loader: 'file-loader?name=./fonts/[name].[ext]'
+            }
+        ]
+    },
+    devServer: {
         contentBase: path.join(__dirname, 'dist'),
     },
-      plugins: [
+    plugins: [
         new MiniCssExtractPlugin({
-            filename: './[name]/[name].[contenthash].css'
+            filename: './styles/[name].[contenthash].css',
         }),
         new OptimizeCssAssetsPlugin({
-          assetNameRegExp: /\.css$/g,
-          cssProcessor: require('cssnano'),
-          cssProcessorPluginOptions: {
-                  preset: ['default'],
-          },
-          canPrint: true
-     }),
-          new HtmlWebpackPlugin({
-          inject: false,
-          template: './src/index.html',
-          filename: 'index.html'
-      }),
-      new HtmlWebpackPlugin({
-          inject: false,
-          template: './src/about.html',
-          filename: 'about.html'
-      }),
-      new HtmlWebpackPlugin({
-          inject: false,
-          template: './src/analytics.html',
-          filename: 'analytics.html'
-      }),
+            assetNameRegExp: /\.css$/g,
+            cssProcessor: require('cssnano'),
+            cssProcessorPluginOptions: {
+                preset: ['default'],
+            },
+            canPrint: true
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: './src/index.html',
+            filename: 'index.html',
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: './src/about.html',
+            filename: 'about.html',
+            chunks: ['about']
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: './src/analitics.html',
+            filename: 'analitics.html',
+            chunks: ['analitics']
+        }),
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({
-          'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-         })
+            'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+        })
     ]
 }

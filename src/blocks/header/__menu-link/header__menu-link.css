@@ -1,3 +1,6 @@
+@import url(./_activ-black/header__menu-link_activ-black.css);
+@import url(./_activ/header__menu-link_activ.css);
+
 .header__menu-link {
     text-decoration: none;
     font-family: Roboto, Arial, sans-serif;

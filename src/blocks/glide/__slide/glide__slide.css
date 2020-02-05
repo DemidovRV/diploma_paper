@@ -18,13 +18,14 @@
     }
 }
 
-.glide__slide:first-child {
-    margin-left: : 0;
+
+/* .glide__slide:first-child {
+    margin-left: 0;
 }
 
 .glide__slide:last-child {
-    margin-right: : 0;
-}
+    margin-right: 0;
+} */
 
 @media screen and (max-width: 850px) {
     .glide__slide {
@@ -53,6 +54,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .glide__slide:first-child {
+        margin-left: 40px;
+    }
     .glide__slide:first-child {
         margin-left: 40px;
     }

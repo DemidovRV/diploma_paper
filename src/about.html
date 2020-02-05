@@ -10,10 +10,10 @@
   
     <meta name="author" content="Демидов Роман">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
-    <!-- <link rel="stylesheet" href="fonts/font.css"> подключить через сss-->
-    <link rel="icon" href="<%=require('./images/icon.png')%>">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="icon" href="<%=require('./images/icon.png').default%>">
 </head>
-
+ 
 <body class="page">
     
 
@@ -53,25 +53,25 @@
             <div class="technologies__list">
                 <div class="technologies__item">
                     <span class='technologies__name technologies__name_upp'>html</span>
-                    <img src="<%=require('./images/html.png')%>" alt="technologies html" class="technologies__image">
+                    <img src="<%=require('./images/html.png').default%>" alt="technologies html" class="technologies__image">
                 </div>
                 <div class="technologies__item">
                     <span class='technologies__name technologies__name_upp'>css</span>
-                    <img src="<%=require('./images/css.png')%>" alt="technologies css" class="technologies__image">
+                    <img src="<%=require('./images/css.png').default%>" alt="technologies css" class="technologies__image">
                 </div>
                 <div class="technologies__item">
                     <span class='technologies__name'>Java Script</span>
-                    <img src="<%=require('./images/js.png')%>" alt="technologies js" class="technologies__image">
+                    <img src="<%=require('./images/js.png').default%>" alt="technologies js" class="technologies__image">
                 </div>
                 <div class="technologies__item">
                     <span class='technologies__name'>Webpack</span>
-                    <img src="<%=require('./images/webpack.png')%>" alt="technologies webpack" class="technologies__image">
+                    <img src="<%=require('./images/webpack.png').default%>" alt="technologies webpack" class="technologies__image">
                 </div>
             </div>
         </div>
     </section>
     <section class="author section">
-        <img src="<%=require('./images/image-03.png')%>" class="author__photo author__photo_about" alt="">
+        <img src="<%=require('./images/image-03.png').default%>" class="author__photo author__photo_about" alt="Фото автора сервиса">
         <div class="author__about author__about_page">
             <h2 class="author__title title">Об авторе</h2>
             <div class="author__text">
@@ -94,11 +94,11 @@
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide">
-                            <div class="history-git__comments">
+                           
                                 <div class="history-git__card">
                                     <div class="history-git__card-container">
                                         <p class="history-git__date">2 декабря 2019 года</p>
-                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png')%>">
+                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png').default%>" alt="Фото автора commit">
                                             <div class="history-git__card-info-name">
                                                 <h3 class="history-git__card-title">Антон Дмитриев</h3>
                                                 <p class="history-git__card-mail">anton@yandex.ru</p>
@@ -110,11 +110,11 @@
                                 </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="history-git__comments">
+                            
                                 <div class="history-git__card">
                                     <div class="history-git__card-container">
                                         <p class="history-git__date">2 декабря 2019 года</p>
-                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png')%>">
+                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png').default%>" alt="Фото автора commit">
                                             <div class="history-git__card-info-name">
                                                 <h3 class="history-git__card-title">Антон Дмитриев</h3>
                                                 <p class="history-git__card-mail">anton@yandex.ru</p>
@@ -126,11 +126,11 @@
                                 </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="history-git__comments">
+                            
                                 <div class="history-git__card">
                                     <div class="history-git__card-container">
                                         <p class="history-git__date">2 декабря 2019 года</p>
-                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png')%>">
+                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png').default%>" alt="Фото автора commit">
                                             <div class="history-git__card-info-name">
                                                 <h3 class="history-git__card-title">Антон Дмитриев</h3>
                                                 <p class="history-git__card-mail">anton@yandex.ru</p>
@@ -142,11 +142,11 @@
                                 </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="history-git__comments">
+                            
                                 <div class="history-git__card">
                                     <div class="history-git__card-container">
                                         <p class="history-git__date">2 декабря 2019 года</p>
-                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png')%>">
+                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png').default%>" alt="Фото автора commit">
                                             <div class="history-git__card-info-name">
                                                 <h3 class="history-git__card-title">Антон Дмитриев</h3>
                                                 <p class="history-git__card-mail">anton@yandex.ru</p>
@@ -158,11 +158,11 @@
                                 </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="history-git__comments">
+                           
                                 <div class="history-git__card">
                                     <div class="history-git__card-container">
                                         <p class="history-git__date">2 декабря 2019 года</p>
-                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png')%>">
+                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png').default%>" alt="Фото автора commit">
                                             <div class="history-git__card-info-name">
                                                 <h3 class="history-git__card-title">Антон Дмитриев</h3>
                                                 <p class="history-git__card-mail">anton@yandex.ru</p>
@@ -174,11 +174,11 @@
                                 </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="history-git__comments">
+                            
                                 <div class="history-git__card">
                                     <div class="history-git__card-container">
                                         <p class="history-git__date">2 декабря 2019 года</p>
-                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png')%>">
+                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png').default%>" alt="Фото автора commit">
                                             <div class="history-git__card-info-name">
                                                 <h3 class="history-git__card-title">Антон Дмитриев</h3>
                                                 <p class="history-git__card-mail">anton@yandex.ru</p>
@@ -190,11 +190,11 @@
                                 </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="history-git__comments">
+                           
                                 <div class="history-git__card">
                                     <div class="history-git__card-container">
                                         <p class="history-git__date">2 декабря 2019 года</p>
-                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png')%>">
+                                        <div class="history-git__card-info"><img class="history-git__card-avatar" src="<%=require('./images/ava.png').default%>" alt="Фото автора commit">
                                             <div class="history-git__card-info-name">
                                                 <h3 class="history-git__card-title">Антон Дмитриев</h3>
                                                 <p class="history-git__card-mail">anton@yandex.ru</p>
@@ -222,7 +222,7 @@
                         
                     </div>
                     </div>
-                    </div>
+                    <!-- </div> -->
                     <button class='history-git__card-button input'>Открыть в GitHub</button>
                     </div>
     </section>
@@ -234,8 +234,8 @@
             <li class="footer__menu-item"><a href="https://praktikum.yandex.ru/" target="_blank" class="footer__link link-cursor">Яндекс.Практикум</a></li>
         </ul>
         <div class="footer__icons">
-            <a href="https://github.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/github.png')%>" alt="icon github"></a>
-            <a href="https://www.facebook.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/facebook.png')%>" alt="icon facebook" class="footer__icon"></a>
+            <a href="https://github.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/github.png').default%>" alt="icon github"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="footer__icon link-cursor"><img src="<%=require('./images/facebook.png').default%>" alt="icon facebook" class="footer__icon"></a>
         </div>
     </footer>
     <script src = "<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>

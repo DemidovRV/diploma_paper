@@ -1,3 +1,6 @@
+@import url(./__title/type-news-loading__title.css);
+@import url(./__preloader/type-news-loading__preloader.css);
+
 .type-news-loading {
     display: block;
     width: 100%;
