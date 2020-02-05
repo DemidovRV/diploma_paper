@@ -1,8 +1,8 @@
-.header__menu-link_activ-black {
+.header__menu-link.header__menu-link_activ-black {
     color: #1A1B22;
 }
 
-.header__menu-link_activ-black:after {
+.header__menu-link.header__menu-link_activ-black:after {
     content: " ";
     height: 2px;
     width: 100%;

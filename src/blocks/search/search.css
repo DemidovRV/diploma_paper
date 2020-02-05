@@ -5,14 +5,13 @@
 @import url(./__error/search__error.css);
 @import url(./__content/search__content.css);
 @import url(./__button/search__button.css);
-
 .search {
     max-width: 1440px;
     width: 100%;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-    background: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg);
+    background: url('../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg');
     min-height: 536px;
 }
 

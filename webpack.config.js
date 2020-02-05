@@ -27,7 +27,15 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader']
+                use: [{
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: "../",
+                        }
+                    },
+                    'css-loader',
+                    'postcss-loader',
+                ]
             },
 
             {
@@ -37,6 +45,7 @@ module.exports = {
                     {
                         loader: 'image-webpack-loader',
                         options: {
+                            bypassOnDebug: true,
                             disable: true
                         }
                     },
