@@ -2,7 +2,7 @@
     color: #fff;
 }
 
-.header__menu-link.header__menu-link_activ:after {
+.header__menu-link_activ:after {
     content: " ";
     height: 2px;
     width: 100%;

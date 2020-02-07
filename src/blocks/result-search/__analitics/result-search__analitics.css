@@ -5,12 +5,16 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #1A1B22;
+    color: #b6bcbf;
     padding-top: 16px;
     position: relative;
     margin-left: -4px;
     display: inline-block;
     padding-bottom: 39px;
+}
+
+.result-search__analitics:hover {
+    color: #000;
 }
 
 @media screen and (min-width: 600px) {

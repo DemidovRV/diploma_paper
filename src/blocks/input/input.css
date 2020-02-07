@@ -6,11 +6,11 @@
 }
 
 .input:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .search__input.input {
-		cursor: default;
+    cursor: default;
 }
 
 @media screen and (min-width: 1024px) {

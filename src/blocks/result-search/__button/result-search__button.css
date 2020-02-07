@@ -9,10 +9,12 @@
     color: #1A1B22;
     border: 1px solid #FFFFFF;
     margin: 0 auto 0;
+    outline: none;
 }
 
 .result-search__button:hover {
-	background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px rgb(71, 75, 78) solid;
 }
 
 @media screen and (min-width: 768px) {

@@ -3,7 +3,7 @@
     max-width: 400px;
     width: 100%;
     height: 264px;
-    background-color: #fff; 
+    background-color: #fff;
     border-radius: 16px;
     /*font-variant-alternates: */
 }
@@ -12,4 +12,8 @@
     .history-git__card {
         height: 288px;
     }
+}
+
+.history-git__card:hover {
+    cursor: pointer;
 }
