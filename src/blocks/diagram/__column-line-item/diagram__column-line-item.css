@@ -1,0 +1,26 @@
+@import url(./_1/diagram__column-line-item_1.css);
+@import url(./_2/diagram__column-line-item_2.css);
+@import url(./_3/diagram__column-line-item_3.css);
+@import url(./_4/diagram__column-line-item_4.css);
+@import url(./_5/diagram__column-line-item_5.css);
+@import url(./_6/diagram__column-line-item_6.css);
+@import url(./_7/diagram__column-line-item_7.css);
+
+.diagram__column-line-item {
+    display: block;
+    background: #2F71E5;
+    height: 24px;
+    margin: auto 0;
+    list-style-type: none;
+}
+
+@media screen and (min-width: 600px) {
+    .diagram__column-line-item {
+        height: 24px;
+        margin-top: 44px;
+    }
+    
+    .diagram__column .diagram__column-line-item:first-child {
+        margin-top: 10px;
+    }   
+}

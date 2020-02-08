@@ -1,0 +1,22 @@
+@import url(./_activ/header__menu-link_activ.css);
+@import url(./_hover-black/header__menu-link_hover-black.css);
+@import url(./_activ-black/header__menu-link_activ-black.css);
+.header__menu-link {
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B6BCBF;
+}
+
+@media screen and (min-width: 500px) {
+    .header__menu-link {
+        font-size: 18px;
+    }
+}
+
+.header__menu-link:hover {
+    color: #fff;
+}

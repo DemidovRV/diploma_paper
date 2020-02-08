@@ -1,0 +1,18 @@
+@import url(./_bottom/diagram__axis_bottom.css);
+
+.diagram__axis {
+	margin-top: 8px;
+	margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    border-top:  1px solid #1A1B22;
+}
+
+
+@media screen and (min-width: 768px){
+    .diagram__axis {
+    	padding-top: 15px;
+    	margin-bottom: 0;
+    	padding-left: 119px;
+    }
+}

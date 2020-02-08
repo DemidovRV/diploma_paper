@@ -1,0 +1,13 @@
+.footer__icon {
+    margin-right: 25px;
+}
+
+@media screen and (min-width: 700px) {
+    .footer__icon {
+        margin-right: 25px;
+    }
+}
+
+.footer__icon:last-child {
+    margin-right: 0;
+}

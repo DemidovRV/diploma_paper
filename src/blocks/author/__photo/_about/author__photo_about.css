@@ -1,0 +1,8 @@
+@media screen and (max-width: 767px) {
+    .author__photo.author__photo_about {
+        margin-top: 32px;
+        width: 272px;
+        height: 272px;
+        display: block;
+    }
+}

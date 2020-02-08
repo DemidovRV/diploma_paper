@@ -1,0 +1,16 @@
+.for-clients__text {
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 700px) {
+    .for-clients__text {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .for-clients__text {
+        margin-top: 25px;
+        width: 820px;
+    }
+}

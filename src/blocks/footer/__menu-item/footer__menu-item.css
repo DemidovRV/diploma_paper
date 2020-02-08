@@ -1,0 +1,5 @@
+@media screen and (min-width: 700px) {
+    .footer__menu-item {
+        margin-right: 24px;
+    }
+}

@@ -1,0 +1,9 @@
+.author__about.author__about_page {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .author__about.author__about_page {
+        margin-bottom: 66px;
+    }
+}

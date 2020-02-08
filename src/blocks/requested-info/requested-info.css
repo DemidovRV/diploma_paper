@@ -1,0 +1,19 @@
+@import url(./__week/requested-info__week.css);
+@import url(./__title/requested-info__title.css);
+@import url(./__numder-analitic/requested-info__numder-analitic.css);
+
+.requested-info {
+	margin-bottom: 24px;
+}
+
+@media screen and (min-width: 600px) {
+	.requested-info {
+      margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .requested-info {
+        margin-bottom: 80px;
+    }
+}

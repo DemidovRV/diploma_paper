@@ -1,0 +1,15 @@
+.result-search__card {
+    width: 100%;
+    max-height: 576px;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-bottom: 13px;
+    /* margin: 0 auto; */
+}
+
+@media screen and (min-width: 768px) {
+    .result-search__card {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}

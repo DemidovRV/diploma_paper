@@ -1,0 +1,25 @@
+.technologies__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 32px;
+    grid-column-gap: 10px;
+    padding-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .technologies__list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 32px;
+        grid-template-rows: 1fr;
+        grid-column-gap: 65px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .technologies__list {
+        padding-top: 10px;
+        padding-right: 110px;
+        grid-column-gap: 40px;
+    }
+}

@@ -1,0 +1,21 @@
+@import url(./__title/__title.css);
+@import url(./__text/for-clients__text.css);
+@import url(./__paragraph/for-clients__paragraph.css);
+
+.for-clients {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 700px) {
+    .for-clients {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .for-clients {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+}

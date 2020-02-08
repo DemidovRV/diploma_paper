@@ -1,0 +1,23 @@
+.section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+    .section {
+        width: 89.5%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        width: 85.5%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+ 	.glide.section,
+    .history-git__container.section {
+	   width: 100%;
+    }   
+}

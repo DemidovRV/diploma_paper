@@ -1,0 +1,26 @@
+.header__menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 56px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 500px) {
+    .header__menu-item {
+        font-size: 34px;
+        margin-left: 40px;
+        min-height: 64px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__menu-item {
+        min-height: 80px;
+    }
+}
+
+.header__menu-item:first-child {
+    margin-left: 0px;
+}

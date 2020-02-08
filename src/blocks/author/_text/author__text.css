@@ -1,0 +1,9 @@
+.author__text {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+    .author__text {
+        margin-top: 24px;
+    }
+}

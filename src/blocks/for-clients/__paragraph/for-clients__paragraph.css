@@ -1,0 +1,15 @@
+.for-clients__paragraph {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 700px) {
+    .for-clients__paragraph {
+        margin-top: 10px;
+    }
+}

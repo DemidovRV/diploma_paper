@@ -1,0 +1,16 @@
+.result-search__title-card {
+    margin: 0;
+    padding-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .result-search__title-card {
+        padding-top: 6px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .result-search__title-card {
+        padding-top: 10px;
+    }
+}

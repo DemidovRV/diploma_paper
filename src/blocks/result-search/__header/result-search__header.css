@@ -1,0 +1,7 @@
+@media screen and (min-width: 600px) {
+    .result-search__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

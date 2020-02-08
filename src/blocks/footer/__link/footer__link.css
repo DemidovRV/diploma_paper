@@ -1,0 +1,19 @@
+.footer__link {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 48px;
+    color: #b6bcbf;
+}
+
+@media screen and (min-width: 700px) {
+    .footer__link {
+        line-height: 24px;
+    }
+}
+
+.footer__link:hover {
+    color: #000;
+}

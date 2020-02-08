@@ -1,0 +1,9 @@
+.for-clients__title {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 700px) {
+    .for-clients__title {
+        margin-bottom: 0;
+    }
+}

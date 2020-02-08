@@ -1,0 +1,57 @@
+{
+  "name": "diploma_paper",
+  "version": "1.0.0",
+  "description": "Diploma work.  Service for the analysis of events occurring in the world.  A service that determines how popular news on a particular topic is.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemidovRV/diploma_paper.git"
+  },
+  "author": "Demidov Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DemidovRV/diploma_paper/issues"
+  },
+  "homepage": "https://github.com/DemidovRV/diploma_paper/",
+  "devDependencies": {
+    "@babel/cli": "7.7.7",
+    "@babel/core": "7.7.7",
+    "@babel/preset-env": "7.7.7",
+    "@typescript-eslint/eslint-plugin": "2.15.0",
+    "@typescript-eslint/parser": "2.15.0",
+    "autoprefixer": "9.7.3",
+    "babel-loader": "8.0.6",
+    "cross-env": "6.0.3",
+    "css-loader": "3.4.1",
+    "cssnano": "4.1.10",
+    "eslint": "6.8.0",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-import": "2.20.0",
+    "eslint-plugin-node": "11.0.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "file-loader": "5.0.2",
+    "gh-pages": "2.0.1",
+    "html-webpack-plugin": "3.2.0",
+    "image-webpack-loader": "6.0.0",
+    "mini-css-extract-plugin": "0.9.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "postcss-loader": "3.0.0",
+    "style-loader": "1.1.2",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.10.1",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "babel-polyfill": "6.26.0",
+    "core-js": "3.4.1",
+    "path": "^0.12.7"
+  }
+}
