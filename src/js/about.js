@@ -40,7 +40,7 @@ apiGithub.getCommits()
             breakpoints: {
                 1440: {
                     type: "slider",
-                    perView: 3,
+                    perView: 3.3,
                     startAt: 2,
                     focusAt: 'center',
                     peek: 15,

@@ -5,13 +5,23 @@
 @import url(./_5/diagram__column-line-item_5.css);
 @import url(./_6/diagram__column-line-item_6.css);
 @import url(./_7/diagram__column-line-item_7.css);
-
 .diagram__column-line-item {
     display: block;
     background: #2F71E5;
     height: 24px;
     margin: auto 0;
     list-style-type: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 24px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 @media screen and (min-width: 600px) {
@@ -19,8 +29,7 @@
         height: 24px;
         margin-top: 44px;
     }
-    
     .diagram__column .diagram__column-line-item:first-child {
         margin-top: 10px;
-    }   
+    }
 }

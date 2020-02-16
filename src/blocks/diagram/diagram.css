@@ -3,31 +3,29 @@
 @import url(./__date/diagram__date.css);
 @import url(./__content/diagram__content.css);
 @import url(./__container/diagram__container.css);
-@import url(./__column-line-text/diagram__column-line-text.css);
 @import url(./__column-line-item/diagram__column-line-item.css);
 @import url(./__column/diagram__column.css);
 @import url(./__axis-values/diagram__axis-values.css);
 @import url(./__axis/diagram__axis.css);
 @import url(./__title/diagram__title.css);
-
 .diagram {
- 	background: #F5F6F7;
- 	padding-top: 24px;
- 	padding-bottom: 24px;
- 	margin-bottom: 10px;
+    background: #F5F6F7;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 600px) {
-	.diagram {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-bottom: 0px;     	
+    .diagram {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 0px;
     }
 }
 
- @media screen and (min-width: 1024px) {
-	.diagram {
+@media screen and (min-width: 1024px) {
+    .diagram {
         padding-top: 80px;
-        padding-bottom: 80px;     	
+        padding-bottom: 80px;
     }
 }

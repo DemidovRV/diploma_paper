@@ -4,22 +4,15 @@
     grid-gap: 7px;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 500px) {
     .result-search__cards {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 8px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .result-search__cards {
-        grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 8px;
         grid-row-gap: 8px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1224px) {
     .result-search__cards {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 16px;
