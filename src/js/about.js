@@ -3,11 +3,11 @@ import ApiGithub from './modules/ApiGithub'
 import { HistoryCard } from './components/HistoryCard'
 import Glide from '@glidejs/glide'
 
-const arr = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'ноября', 'декабря'];
+const arrMonth = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'ноября', 'декабря'];
 
 function getDateFormatted(date) {
     date = new Date(date);
-    return `${date.getDate()} ${arr[date.getMonth()]}, ${date.getFullYear()}`;
+    return `${date.getDate()} ${arrMonth[date.getMonth()]}, ${date.getFullYear()}`;
 }
 
 const githubUrl = 'https://api.github.com';
@@ -19,7 +19,7 @@ const apiGithub = new ApiGithub(githubUrl, githubUsername, githubRepo, githubTok
 
 const container = document.querySelector('.glide__slides');
 const historyCard = new HistoryCard();
-let bank;
+let storage;
 
 apiGithub.getCommits()
     .then(res => {
@@ -29,8 +29,8 @@ apiGithub.getCommits()
         return Promise.reject(res.status);
     })
     .then(commits => {
-        bank = commits;
-        bank.forEach(commit => container.appendChild(historyCard.createHistoryCard(commit)));
+        storage = commits;
+        storage.forEach(commit => container.appendChild(historyCard.createHistoryCard(commit)));
         const glide = new Glide('.glide', {
             type: "slider",
             perView: 3,

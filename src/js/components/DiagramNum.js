@@ -7,7 +7,7 @@ export default class DiagramNum {
     }
 
     diagramNumItem() {
-        let arr = [];
+        const arr = [];
         for (let i = 0; i < localStorage.length; i++) {
             if (localStorage.getItem(i)) {
                 arr.push(JSON.parse(localStorage.getItem(i)));
@@ -34,7 +34,7 @@ export default class DiagramNum {
                     resultDescription = resultDescription + 1;
                 }
             }
-            let result = resultTitle + resultDescription;
+            const result = resultTitle + resultDescription;
             localStorage.setItem(`ResultColumn${i}`, result);
 
             this.container.querySelector(`.diagram__column-line-item_${7 - i}`).style.width = `${result}%`;

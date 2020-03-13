@@ -1,6 +1,4 @@
 import '../styles/index.css'
-// import src from '../images/no-photo.jpg';
-
 import Validation from './utilits/validation'
 import NewsCard from './components/NewsCard'
 import NewsCardsList from './components/NewsCardsList'
@@ -28,8 +26,8 @@ let storage;
 const numCards = 3; // 3 новости
 
 function render() {
-    const data = storage.splice(-numCards, numCards);
-    data.forEach(news => newsCardsList.addNewsCard(newsCard.createNewsCard(news)));
+    const dataNews = storage.splice(-numCards, numCards);
+    dataNews.forEach(news => newsCardsList.addNewsCard(newsCard.createNewsCard(news)));
     if (storage.length) {
         moreNews.classList.remove('visually-hidden');
         moreNews.addEventListener('click', render);
@@ -55,8 +53,9 @@ function searchNews() {
     input.setAttribute('disabled', true)
     buttonSearch.setAttribute('disabled', true);
     preloader.classList.remove('visually-hidden');
-    localStorage.clear();
+
     if (input.value) {
+        localStorage.clear();
         newsCardsList.deleteNewsCards();
         notFound.classList.add('visually-hidden');
         moreNews.classList.add('visually-hidden');
@@ -69,16 +68,15 @@ function searchNews() {
                 }
                 return Promise.reject(res.status);
             })
-            .then(data => {
-                localStorage.setItem('allItem', data.totalResults);
+            .then(arrNews => {
+                localStorage.setItem('news', JSON.stringify(arrNews));
                 localStorage.setItem('keyword', input.value);
-                apiNews.resultTitle(data.articles);
-                apiNews.addNewsLocalStorage(data.articles);
-                storage = data.articles;
+                localStorage.setItem('allItem', arrNews.totalResults);
+                apiNews.addNewsLocalStorage(arrNews.articles);
+                storage = arrNews.articles;
                 if (storage.length > 0) {
                     render();
                     resultSearch.classList.remove('visually-hidden');
-
                 } else {
                     notFound.classList.remove('visually-hidden');
                 }
@@ -90,7 +88,6 @@ function searchNews() {
                 preloader.classList.add('visually-hidden');
                 input.removeAttribute('disabled')
                 buttonSearch.removeAttribute('disabled');
-
             })
     }
 }
@@ -100,13 +97,10 @@ buttonSearch.addEventListener('click', (elem) => {
     searchNews();
 });
 
-// let img = document.querySelectorAll(".result-search__img");
+if (localStorage.getItem('news')) {
+    storage = JSON.parse(localStorage.getItem('news')).articles;
+    input.value = localStorage.getItem('keyword');
+    render();
+    resultSearch.classList.remove('visually-hidden');
 
-// function addNullImg() {
-//     for (let i = 0; i < img.length; i++) {
-//         if (img[i].src = 0) {
-//             img[i].src = src;
-//         }
-//     }
-// }
-// addNullImg();
+}
