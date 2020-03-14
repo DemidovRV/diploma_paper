@@ -1,8 +1,8 @@
-const arr = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'ноября', 'декабря'];
+const month = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'ноября', 'декабря'];
 
 function getDateFormatted(date) {
     date = new Date(date);
-    return `${date.getDate()} ${arr[date.getMonth()]}, ${date.getFullYear()}`;
+    return `${date.getDate()} ${month[date.getMonth()]}, ${date.getFullYear()}`;
 }
 export class HistoryCard {
     createHistoryCard(data) {
