@@ -39,24 +39,22 @@
             <form class="search__form">
                 <input type="text" name="typeNews" class="input search__input" placeholder="Введите тему новости" required minlength="3" maxlength="25">
                 <button class="input search__button">Искать</button>
-                <span class="search__error">Ошибка</span>
+                <span class="search__error"></span>
             </form>
         </section>
     </div>
 
-    <section class="result-search">
+    <div class='type-news-loading visually-hidden'>
+        <i class="type-news-loading__preloader"></i>
+        <h2 class="type-news-loading__title">Идет поиск новостей...</h2>
+    </div>
 
-        <div class='type-news-loading visually-hidden'>
-            <i class="type-news-loading__preloader"></i>
-            <h2 class="type-news-loading__title">Идет поиск новостей...</h2>
-        </div>
-
-        <div class='news-not-found visually-hidden'>
-            <div class="news-not-found__img"></div>
-            <h2 class="news-not-found__title">Идет поиск новостей...</h2>
-            <span class="news-not-found__subtitle">К сожалению по вашему запросу ничего не найдено.</span>
-        </div>
-
+    <div class='news-not-found visually-hidden'>
+        <div class="news-not-found__img"></div>
+        <h2 class="news-not-found__title">Ниего не найдено!</h2>
+        <span class="news-not-found__subtitle">К сожалению по вашему запросу ничего не найдено.</span>
+    </div>
+    <section class="result-search visually-hidden">
         <div class="section">
 
             <div class="result-search__header">
@@ -65,86 +63,9 @@
             </div>
 
             <div class="result-search__cards">
-                <div class="result-search__card">
-                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
-                    <div class="result-search__content">
-                        <p class="result-search__data">2 августа, 2019</p>
-                        <h2 class="result-search__title-card">
-                            <a href="" target="_blank" class="result-search__title-link">Национальное достояние – парки</a>
-                        </h2>
-                        <p class="result-search__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                        <a href="" target="_blank" class="result-search__link link-cursor">Лента.ру</a>
-
-                    </div>
-
-                </div>
-
-                <div class="result-search__card">
-                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
-                    <div class="result-search__content">
-                        <p class="result-search__data">2 августа, 2019</p>
-                        <h2 class="result-search__title-card">
-                            <a href="" target="_blank" class="result-search__title-link">Национальное достояние – парки</a>
-                        </h2>
-                        <p class="result-search__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                        <a href="" target="_blank" class="result-search__link link-cursor">Лента.ру</a>
-
-                    </div>
-                </div>
-
-                <div class="result-search__card">
-                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
-                    <div class="result-search__content">
-                        <p class="result-search__data">2 августа, 2019</p>
-                        <h2 class="result-search__title-card">
-                            <a href="" target="_blank" class="result-search__title-link link-cursor">Национальное достояние – парки</a>
-                        </h2>
-                        <p class="result-search__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-                        <a href="" target="_blank" class="result-search__link link-cursor">Лента.ру</a>
-                    </div>
-                </div>
-
-                <div class="result-search__card ">
-                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
-                    <div class="result-search__content">
-                        <p class="result-search__data">2 августа, 2019</p>
-                        <h2 class="result-search__title-card">
-                            <a href="" target="_blank" class="result-search__title-link link-cursor
-                            ">Национальное достояние – парки</a>
-                        </h2>
-                        <p class="result-search__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                        <a href="" target="_blank" class="result-search__link">Лента.ру</a>
-                    </div>
-                </div>
-
-                <div class="result-search__card ">
-                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка новости">
-                    <div class="result-search__content">
-                        <p class="result-search__data">2 августа, 2019</p>
-                        <h2 class="result-search__title-card">
-                            <a href="" target="_blank" class="result-search__title-link link-cursor">Национальное достояние – парки</a>
-                        </h2>
-                        <p class="result-search__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                        <a href="" target="_blank" class="result-search__link link-cursor">Лента.ру</a>
-
-                    </div>
-                </div>
-                <div class="result-search__card ">
-                    <img src="<%=require('./images/image_08.jpg').default%>" class="result-search__img" alt="Картинка еще одной новости">
-                    <div class="result-search__content">
-                        <p class="result-search__data">2 августа, 2019</p>
-                        <h2 class="result-search__title-card">
-                            <a href="" target="_blank" class="result-search__title-link link-cursor">Национальное достояние – парки</a>
-                        </h2>
-                        <p class="result-search__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                        <a href="" target="_blank" class="result-search__link link-cursor">Лента.ру</a>
-
-                    </div>
-                </div>
-
             </div>
         </div>
-        <button class="result-search__button input">Показать еще</button>
+        <button class="result-search__button input visually-hidden">Показать еще</button>
     </section>
     <section class="author section">
         <img src="<%=require('./images/image-03.png').default%>" class="author__photo" alt="Фото автора сервиса">

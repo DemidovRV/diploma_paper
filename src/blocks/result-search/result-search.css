@@ -1,4 +1,3 @@
-@import url(./__title-link/result-search__title-link.css);
 @import url(./__title-card/result-search__title-card.css);
 @import url(./__title/result-search__title.css);
 @import url(./__text/result-search__text.css);
@@ -11,7 +10,6 @@
 @import url(./__card/result-search__card.css);
 @import url(./__button/result-search__button.css);
 @import url(./__analitics/result-search__analitics.css);
-
 .result-search {
     background: #F5F6F7;
     padding-bottom: 44px;

@@ -1,16 +1,29 @@
 .result-search__title-card {
     margin: 0;
     padding-top: 12px;
+    overflow: hidden;
+    font-family: 'Roboto Slab', Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #1A1B22;
+    max-height: 56px;
 }
 
 @media screen and (min-width: 768px) {
     .result-search__title-card {
         padding-top: 6px;
+        line-height: 24px;
+        max-height: 72px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .result-search__title-card {
         padding-top: 10px;
+        font-size: 26px;
+        line-height: 30px;
+        max-height: 90px;
     }
 }
