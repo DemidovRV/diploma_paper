@@ -7,6 +7,7 @@
     line-height: 34px;
     color: #1A1B22;
     margin: 0;
+    word-break: break-all;
 }
 
 @media screen and (min-width: 600px) {

@@ -35,7 +35,7 @@
             <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
             <form class="search__form">
                 <input type="text" name="typeNews" class="input search__input" placeholder="Введите тему новости" required minlength="3" maxlength="25">
-                <button class="input search__button">Искать</button>
+                <button class="input search__button" disabled>Искать</button>
                 <span class="search__error"></span>
             </form>
         </section>
@@ -65,7 +65,9 @@
         <button class="result-search__button input visually-hidden">Показать еще</button>
     </section>
     <section class="author section">
-        <img src="<%=require('./images/image-03.png').default%>" class="author__photo" alt="Фото автора сервиса">
+        <picture>
+            <img src="<%=require('./images/image-03.png').default%>" class="author__photo" alt="Фото автора сервиса">
+        </picture>
         <div class="author__about">
             <h2 class="author__title title">Об авторе</h2>
             <div class="author__text">
