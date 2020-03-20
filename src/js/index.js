@@ -92,8 +92,8 @@ function searchNews() {
     }
 }
 
-buttonSearch.addEventListener('click', (elem) => {
-    elem.preventDefault();
+buttonSearch.addEventListener('click', (e) => {
+    e.preventDefault();
     searchNews();
 });
 

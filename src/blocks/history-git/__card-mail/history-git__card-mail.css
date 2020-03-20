@@ -3,7 +3,9 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 22px;    
+    line-height: 22px;
     color: #1A1B22;
     margin-top: 2px;
+    hyphens: auto;
+    word-break: break-all;
 }

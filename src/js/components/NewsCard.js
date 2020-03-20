@@ -8,10 +8,9 @@ function formattedDate(date) {
 }
 
 export default class NewsCard {
-    constructor() {}
 
     createNewsCard(data) {
-        const resultSearchCard = document.createElement('а');
+        const resultSearchCard = document.createElement('a');
         const resultSearchCardImg = document.createElement('img');
         const resultSearchCardContent = document.createElement('div');
         const resultSearchCardData = document.createElement('p');
@@ -19,7 +18,7 @@ export default class NewsCard {
         const resultSearchCardText = document.createElement('p');
         const resultSearchCardSource = document.createElement('p');
 
-        resultSearchCard.setAttribute('href', `${data.url}`);
+        resultSearchCard.setAttribute(`href`, `${data.url}`);
         resultSearchCard.setAttribute('target', '_blank');
         resultSearchCardImg.setAttribute('src', `${data.urlToImage}`);
         resultSearchCardImg.setAttribute('alt', `${data.title}`);
